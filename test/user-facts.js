@@ -6,7 +6,7 @@ var P = require('bluebird');
 var requireInject = require('require-inject');
 
 var userFacts = requireInject('../lib/user-facts', {
-  '../../agents/user': MockUserClient
+  '../agents/user': MockUserClient
 });
 
 lab.experiment('user facts', function() {
